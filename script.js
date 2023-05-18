@@ -11,4 +11,4 @@ function palindrome(str){
 	}
 
 }
-module.exports = palindrome
+module.exports = palindrome(hello);
