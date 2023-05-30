@@ -2,13 +2,18 @@
 
 function palindrome(str){
 	var newstr=str.toUpperCase();
-	var revstr=str.reverse();
-	if(newstr===revstr){
-		return true;
+	let i=0;
+	let j=str.length-1;
+		while(i<j){
+		if(str.charAt(i)==str.charAt(j)){
+			i++;
+			j--;
+		}
+		else{
+			return false;
+		}
 	}
-	else {
-		return false;
-	}
+	return true;
 
 }
 module.exports = palindrome(hello);
