@@ -1,7 +1,7 @@
 // complete the given function
 
 function palindrome(str){
-	str=str.toUpperCase();
+	str = str.replace(/[^A-Za-z0-9]/g, '');
 	let i=0;
 	let j=str.length-1;
 		while(i<j){
